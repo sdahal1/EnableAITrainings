@@ -36,31 +36,29 @@ export function Footer() {
       links: [
         { label: 'About Us', href: '/about' },
         { label: 'Our Mission', href: '/about#mission' },
-        { label: 'Team', href: '/about#team' },
-        { label: 'Careers', href: '/careers' },
-        { label: 'Press Kit', href: '/press' },
+        { label: 'Team', href: '/about#team' }
       ]
     },
-    {
-      title: 'Support',
-      links: [
-        { label: 'Help Center', href: '/help' },
-        { label: 'Community', href: '/community' },
-        { label: 'Contact Us', href: '/contact' },
-        { label: 'System Status', href: '/status' },
-        { label: 'Bug Reports', href: '/bugs' },
-      ]
-    },
-    {
-      title: 'Legal',
-      links: [
-        { label: 'Privacy Policy', href: '/privacy' },
-        { label: 'Terms of Service', href: '/terms' },
-        { label: 'Cookie Policy', href: '/cookies' },
-        { label: 'GDPR', href: '/gdpr' },
-        { label: 'Accessibility', href: '/accessibility' },
-      ]
-    }
+    // {
+    //   title: 'Support',
+    //   links: [
+    //     { label: 'Help Center', href: '/help' },
+    //     { label: 'Community', href: '/community' },
+    //     { label: 'Contact Us', href: '/contact' },
+    //     { label: 'System Status', href: '/status' },
+    //     { label: 'Bug Reports', href: '/bugs' },
+    //   ]
+    // },
+    // {
+    //   title: 'Legal',
+    //   links: [
+    //     { label: 'Privacy Policy', href: '/privacy' },
+    //     { label: 'Terms of Service', href: '/terms' },
+    //     { label: 'Cookie Policy', href: '/cookies' },
+    //     { label: 'GDPR', href: '/gdpr' },
+    //     { label: 'Accessibility', href: '/accessibility' },
+    //   ]
+    // }
   ]
 
   const domains = [
@@ -107,28 +105,32 @@ export function Footer() {
               <div className="space-y-2 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>hello@enable-ai.com</span>
+                  <span>raabdahl@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+1 (703) 606-4139</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>San Francisco, CA</span>
+                  <span>Washington DC Metropolitan area</span>
                 </div>
               </div>
 
               {/* Social Links */}
               <div className="flex space-x-2 mt-6">
-                <Button variant="ghost" size="sm" className="w-9 h-9 p-0">
+                {/* <Button variant="ghost" size="sm" className="w-9 h-9 p-0">
                   <Twitter className="w-4 h-4" />
+                </Button> */}
+                <Button variant="ghost" size="sm" className="w-9 h-9 p-0">
+                  <a href="https://github.com/sdahal1">
+                    <Github className="w-4 h-4" />
+                  </a>
                 </Button>
                 <Button variant="ghost" size="sm" className="w-9 h-9 p-0">
-                  <Github className="w-4 h-4" />
-                </Button>
-                <Button variant="ghost" size="sm" className="w-9 h-9 p-0">
-                  <Linkedin className="w-4 h-4" />
+                  <a href="https://www.linkedin.com/in/saurabhdahal/">
+                    <Linkedin className="w-4 h-4" />
+                  </a>
                 </Button>
               </div>
             </div>

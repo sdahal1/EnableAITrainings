@@ -7,7 +7,7 @@ interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElemen
 
 export function ImageWithFallback({
   src,
-  fallbackSrc = '/src/assets/9f3796087ae1fcc5c6d7ac1bf34aa7dff4fb01dc.png',
+  fallbackSrc = '/fallbackImage.jpeg',
   fallbackClassName,
   className,
   alt,

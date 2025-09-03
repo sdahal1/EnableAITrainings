@@ -40,6 +40,7 @@ interface Training {
   duration: string;
   level: 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels';
   imageUrl: string;
+  bannerUrl: string;
 }
 
 interface TutorialPageProps {
@@ -390,7 +391,7 @@ export function TutorialPage({ training, onBack }: TutorialPageProps) {
   }, [])
 
   const markSectionComplete = (sectionId: string) => {
-    setCompletedSections(prev => new Set([...prev, sectionId]))
+    setCompletedSections((prev: Set<string>) => new Set([...Array.from(prev), sectionId]))
   }
 
   const scrollToSection = (sectionId: string) => {
@@ -757,7 +758,7 @@ export function TutorialPage({ training, onBack }: TutorialPageProps) {
                       <Card className="overflow-hidden">
                         <div className="relative">
                           <ImageWithFallback
-                            src={training.imageUrl}
+                            src={training.bannerUrl}
                             alt="Automate Weekly Reports with AI - Asana to Amazon Q CLI (MCP) to Gmail workflow"
                             width={1200}
                             height={400}
@@ -773,7 +774,7 @@ export function TutorialPage({ training, onBack }: TutorialPageProps) {
                     const content = tutorialContent[section.id as keyof typeof tutorialContent]
                     return (
                       <div key={section.id} id={section.id} className="scroll-mt-8">
-                        <Card className="rounded-t-[29px] rounded-b-[12px]" className="rounded-tl-[14px] rounded-tr-[12px] rounded-bl-[12px] rounded-br-[12px]">
+                        <Card className="rounded-t-[29px] rounded-b-[12px] rounded-bl-[12px] rounded-br-[12px]">
                           <CardHeader className="rounded-t-[29px] rounded-b-[0px] bg-[rgba(137,150,211,0.58)]">
                             <div className="flex items-center justify-between">
                               <CardTitle className="text-2xl flex items-center gap-3">

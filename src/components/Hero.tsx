@@ -27,7 +27,7 @@ export function Hero() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1080&h=720&fit=crop"
+                src="/HeroPicture.jpeg"
                 alt="Enable AI - Professional AI Education"
                 width={1080}
                 height={720}
@@ -61,7 +61,7 @@ export function Hero() {
                     {/* Brand text */}
                     <div>
                       <div className="text-lg font-bold text-foreground">Enable AI</div>
-                      <div className="text-sm text-muted-foreground">Professional AI Education</div>
+                      <div className="text-sm text-muted-foreground">Professional AI Trainings</div>
                     </div>
                   </div>
                 </div>
