@@ -1,6 +1,5 @@
 import React from 'react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
-import heroImage from 'figma:asset/06394ff101135fbe117b2ae37028c27e0c669fc3.png'
 
 export function Hero() {
   return (
@@ -28,7 +27,7 @@ export function Hero() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <ImageWithFallback
-                src={heroImage}
+                src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1080&h=720&fit=crop"
                 alt="Enable AI - Professional AI Education"
                 width={1080}
                 height={720}

@@ -1,4 +1,3 @@
-import image_9f3796087ae1fcc5c6d7ac1bf34aa7dff4fb01dc from 'figma:asset/9f3796087ae1fcc5c6d7ac1bf34aa7dff4fb01dc.png';
 import React, { useState } from 'react'
 
 interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElement> {
@@ -8,7 +7,7 @@ interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElemen
 
 export function ImageWithFallback({
   src,
-  fallbackSrc = image_9f3796087ae1fcc5c6d7ac1bf34aa7dff4fb01dc,
+  fallbackSrc = '/src/assets/9f3796087ae1fcc5c6d7ac1bf34aa7dff4fb01dc.png',
   fallbackClassName,
   className,
   alt,

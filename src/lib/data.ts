@@ -18,7 +18,7 @@ export const mockTrainings: Training[] = [
     domains: ['Software Development'],
     duration: '3 hours',
     level: 'Advanced',
-    imageUrl: 'figma:asset/7556f18c08162bdb7e12b662fd21c07311532763.png'
+    imageUrl: '/src/assets/9f3796087ae1fcc5c6d7ac1bf34aa7dff4fb01dc.png'
   },
   {
     id: 'amazon-q-cli',

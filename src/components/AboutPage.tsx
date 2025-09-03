@@ -4,18 +4,17 @@ import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { Users, Target, Lightbulb, ArrowRight } from 'lucide-react'
 import { ImageWithFallback } from './figma/ImageWithFallback'
-import profileImage from '../assets/profileImage.png'
 
 interface AboutPageProps {
   totalCourses?: number;
 }
 
-export function AboutPage({ totalCourses = 0 }: AboutPageProps = {}) {
+export function AboutPage({ totalCourses = 0 }: AboutPageProps) {
   const teamMembers = [
     {
       name: 'Founder & Educator',
       role: 'CEO of Enable AI',
-      image: profileImage,
+      image: '/src/assets/profileImage.png',
       bio: 'Cloud Software Development Trainer and Speaker with expertise in making complex technical concepts accessible. Former engineer and trainer at Oracle, various coding bootcamps, and built training programs at AWS.'
     }
   ]
