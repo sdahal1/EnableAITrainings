@@ -24,8 +24,8 @@ export const mockTrainings: Training[] = [
   },
   {
     id: 'amazon-q-cli',
-    title: 'Amazon Q Developer CLI — Workflow 1',
-    description: 'Learn Q CLI from theory to practice: master context & tokens, configure trusted MCPs, and build a production-worthy pipeline for Asana integration.',
+    title: 'Using Amazon Q CLI with Youtube MCP for Technical training',
+    description: 'Learn Q CLI from theory to practice: master context & tokens, configure trusted MCPs, and build a production-worthy pipeline for Youtube integration.',
     type: 'tutorial/guide',
     domains: ['Software Development'],
     duration: '2 hours',
