@@ -9,17 +9,7 @@ import {
   PaginationNext, 
   PaginationPrevious 
 } from './ui/pagination'
-
-interface Training {
-  id: string;
-  title: string;
-  description: string;
-  type: 'tutorial/guide' | 'article/blog' | 'course';
-  domains: string[];
-  duration: string;
-  level: 'Beginner' | 'Intermediate' | 'Advanced' | 'All Levels';
-  imageUrl: string;
-}
+import { type Training } from '@/lib/data'
 
 interface TrainingGridProps {
   trainings: Training[]
